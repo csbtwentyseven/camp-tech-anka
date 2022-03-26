@@ -10,11 +10,11 @@ class MenuItems extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.all(0),
       children: [
-        const Divider(thickness: 3, color: Color(0XFFE74C3C)),
+        const Divider(thickness: 3, color: Color(0xFF3498DB)),
         InkWell(
           onTap: () {},
           child: const ListTile(
-            leading: Icon(Icons.add_circle_outline_sharp),
+            leading: Icon(Icons.person),
             title: Text(
               "PROFİLİM",
               style: TextStyle(fontSize: 18),
@@ -26,7 +26,7 @@ class MenuItems extends StatelessWidget {
         InkWell(
           onTap: () {},
           child: const ListTile(
-            leading: Icon(Icons.add_circle_outline_sharp),
+            leading: Icon(Icons.emoji_people),
             title: Text(
               "TAKİP ETTİĞİM TOPLULUKLAR",
               style: TextStyle(fontSize: 18),
@@ -38,7 +38,7 @@ class MenuItems extends StatelessWidget {
         InkWell(
             child: ListTile(
                 onTap: () {},
-                leading: const Icon(Icons.fiber_new_outlined),
+                leading: const Icon(Icons.calendar_today_rounded),
                 title: const Text("BEKLENEN ETKİNLİKLER",
                     style: TextStyle(fontSize: 18)),
                 trailing: const Icon(Icons.navigate_next_sharp))),
@@ -46,7 +46,7 @@ class MenuItems extends StatelessWidget {
         InkWell(
             onTap: () {},
             child: const ListTile(
-                leading: Icon(Icons.add_box_outlined),
+                leading: Icon(Icons.people),
                 title: Text(
                   "EKİBİM",
                   style: TextStyle(fontSize: 18),
@@ -56,7 +56,7 @@ class MenuItems extends StatelessWidget {
         InkWell(
           onTap: () {},
           child: const ListTile(
-              leading: Icon(Icons.help_outline),
+              leading: Icon(Icons.history),
               title: Text(
                 "GEÇMİŞ ETKİNLİKLERİM",
                 style: TextStyle(fontSize: 18),
@@ -75,6 +75,17 @@ class MenuItems extends StatelessWidget {
               trailing: Icon(Icons.navigate_next_sharp)),
         ),
         const Divider(thickness: 3, color: Color(0xFF3498DB)),
+        InkWell(
+          onTap: () {},
+          child: const ListTile(
+              leading: Icon(Icons.logout_outlined),
+              title: Text(
+                "ÇIKIŞ",
+                style: TextStyle(fontSize: 18),
+              ),
+              trailing: Icon(Icons.navigate_next_sharp)),
+        ),
+        const Divider(thickness: 3, color: Color(0XFFE74C3C)),
       ],
     );
   }
